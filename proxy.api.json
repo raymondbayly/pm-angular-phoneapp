@@ -1,0 +1,27 @@
+{
+  "/peramobile/api/*": {
+    "target": "http://localhost:9999",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/peramobile/api/secure/common/*": {
+    "target": "http://localhost:9999",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/peramobile/secure/pm/api/*": {
+    "target": "http://localhost:9999",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/peramobile/assets/*": {
+    "target": "http://localhost:9999",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  }
+
+}

@@ -1,0 +1,57 @@
+// http://ionicframework.com/docs/theming/
+@import "~@ionic/angular/css/core.css";
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+// PeraHealth specific global CSS classes
+
+// Default background color (overridden)
+.peraHealthBackground {
+  --background: var(--perahealth-brand-background);
+}
+
+// For tab pages (background + text color and what-not)
+.peraHealthTabPageTitle {
+  @extend .peraHealthBackground;
+  padding-left: 10px;
+  font-family:Tahoma;
+  font-weight:400;
+  font-size:1em;
+  text-align: left;
+  color: lightgray;
+}
+
+
+///////////////////////////////////////
+//Global Font add-on for branding
+///////////////////////////////////////
+//SF Pro Display
+@font-face {
+  font-family: 'sf_pro_display-regular';
+    src: url('/assets/fonts/sf-pro-display-regular-webfont.woff2') format('woff2'),
+    url('/assets/fonts/sf-pro-display-regular-webfont.woff') format('woff'),
+    url('/assest/fonts/sf-pro-display-regular-webfont.otf') format('opentype');
+}
+
+//DIN Condensed
+@font-face {
+  font-family: 'din_condensedbold';
+    src: url('/assets/fonts/dincondensed-bold-webfont.woff2') format('woff2'),
+    url('/assets/fonts/dincondensed-bold-webfont.woff') format('woff'),
+    url('/assets/fonts/dincondensed-bold-webfont.ttf') format('truetype');
+}
+
+
+//reset all list elements
+ul{
+  margin:0;
+  padding:0;
+  list-style:none;
+}

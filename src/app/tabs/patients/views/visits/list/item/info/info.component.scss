@@ -1,0 +1,44 @@
+.truncateLongText {
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.patientName {
+  font-family:'Helvetica Neue';
+  padding-top: 2px;
+  font-size: 20px;
+}
+
+.patient-icon {
+  vertical-align: middle;
+  font-size:22px;
+  color:#338fc2;
+}
+
+.dob {
+  color: black;
+  font-size: 12px;
+}
+
+.loc {
+  @extend .truncateLongText;
+  font-family:'Helvetica Neue';
+  padding-top: 10px;
+  color: black;
+  font-weight: bold;
+}
+
+.mrn {
+  @extend .truncateLongText;
+  // padding-top:20px;
+}
+
+.diag {
+  @extend .truncateLongText;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: small;
+  color: black;
+}

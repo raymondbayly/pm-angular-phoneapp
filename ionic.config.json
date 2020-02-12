@@ -1,0 +1,7 @@
+{
+  "name": "peraHealth",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

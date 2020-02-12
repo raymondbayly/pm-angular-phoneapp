@@ -1,0 +1,6 @@
+<div class="warning-container" [ngClass]="getRiScoreClass(patient?.category)">
+    <div class="warning-text">{{remWarningWord(activeWarningCategory)}}</div>
+    <div class="ri-score-text">{{latestRiScore}}</div>
+    <div class="created-text" *ngIf="(patient)">Created At:</div>
+    <div class="date-time-text" *ngIf="(patient)">{{dateService.getDateFormat(this.patient.timeZone, this.patient.createdDT, 'MM/DD/YY')}} | {{dateService.getDateFormat(this.patient.timeZone, this.patient.createdDT, 'HH:MM')}}</div>
+</div>

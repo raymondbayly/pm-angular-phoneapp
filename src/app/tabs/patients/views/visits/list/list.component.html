@@ -1,0 +1,12 @@
+<ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content
+      pullingText="Pull to refresh"
+      refreshingText="loading...">
+    </ion-refresher-content>
+  </ion-refresher>
+  
+<ion-virtual-scroll [items]="peraGraphs" >
+    <div *virtualItem="let graph" class="visitInfoDisplay">
+        <app-patients-item [graph]="graph"></app-patients-item>
+    </div>
+</ion-virtual-scroll>

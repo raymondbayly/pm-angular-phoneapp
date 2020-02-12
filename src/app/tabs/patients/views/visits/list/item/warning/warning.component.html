@@ -1,0 +1,6 @@
+<div class="warning-container" [ngClass]="getRiScoreClass(graph?.activeWarning?.category)">
+    <div class="warning-text">{{activeWarningCategory}}</div>
+    <div class="ri-score-text">{{latestRiScore}}</div>
+    <div class="created-text" *ngIf="(graph && graph.activeWarning)">Created At:</div>
+    <div class="date-time-text" *ngIf="(graph && graph.activeWarning)">{{dateService.getDateFormat(this.graph.timeZone, this.graph.activeWarning.createdDate, 'MM/DD/YY')}} | {{dateService.getDateFormat(this.graph.timeZone, this.graph.activeWarning.createdDate, 'HH:MM')}}</div>
+</div>

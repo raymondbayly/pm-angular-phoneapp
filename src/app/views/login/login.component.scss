@@ -1,0 +1,171 @@
+@import "../../../theme/variables";
+$font-size: 14vw;
+
+.getBackgroundImage {
+  //--background:#000000 url('../../../assets/img/background_picture.png') no-repeat 0 0;
+  //background-size: cover;
+  text-align: center;
+  //remove custom padding that gets added to a project.
+  --ion-padding:0;
+}
+
+.transparentBackground {
+  --background: rgba(255,255,255,0.30);
+  //////////////////////////
+  // decease opacity when a user types into a input field.
+  //////////////////////////
+  &.item-has-value{
+    --background: rgba(255,255,255,0.75);
+  }
+}
+
+.brandYellow {
+  color: var(--perahealth-brand-yellow);
+}
+
+.brandWhite {
+  color: white;
+}
+
+
+.login-wrap{
+  display:flex;
+  flex-flow:column;
+  justify-content:center;
+  align-content:center;
+  width:100%;
+  height:calc(100% - 0%);
+  background:transparent url('../../../assets/img/background_picture.png') no-repeat 0 0;
+  background-size: cover;
+  padding:0px 16px 60px;
+}
+
+.positionTitle {
+  //width:90%;
+  width:79%;
+  margin:0 auto 15%;
+  text-align: center;
+  overflow:hidden;
+}
+
+.brandTitle {
+  //font-family:$sf-pro-display-reg;
+  font-family: var(--peramobile-brandfont);
+  font-size: $font-size;
+  line-height: 100%;
+}
+
+
+.trademark {
+  display:inline-block;
+  position: relative;
+  top:4px;
+  left:1px;
+  font-size: 0.25 * $font-size;
+  line-height:0;
+}
+
+
+.positionSubtitle {
+  display:block;
+  //width:calc(100% - 11%);
+  width:94%;
+  //font-family: 'din_condensedbold';
+  font-family: var(--peramobile-secondaryfont);
+  font-size: 0.32 * $font-size;
+
+  letter-spacing: 0.25vw;
+  text-align: right;
+  color: white;
+}
+
+
+ion-item{
+  --padding-start:0;
+  overflow:hidden;
+  &:first-of-type{
+    --border-radius:3px 3px 0 0;
+  }
+  &:last-of-type{
+    --border-radius:0 0 3px 3px;
+    --border-color:transparent;
+  }
+  @media (min-width: 768px){
+    max-width: 79%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+
+ion-input{
+  --padding-start:7px;
+  --padding-end:7px;
+  --placeholder-color: white;
+  --placeholder-opacity: 1;
+}
+
+
+///////////////////////////////////
+// Always make labels for inputs accessibility.
+// Just make the tiny with css but still readable in the code.
+///////////////////////////////////
+ion-label{
+  width:0;
+  height:0;
+  color:#ffffff;
+  overflow:hidden;
+}
+
+
+button {
+  //width: 20vw;
+  //height: 8vw;
+  //background-color: var(--perahealth-brand-turquoise);
+  background-color: var(--perahealth-brand-gray);
+  border-radius: 3px;
+  margin-top: 5vw;
+  padding:2% 4%;
+  font-size: 0.27 * $font-size;
+  line-height:110%;
+  color: white;
+  //&:focus{
+  //  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  //  border: 1px solid rgba(81, 203, 238, 1);
+  //}
+  @media (min-width: 768px){
+    font-size:17px;
+  }
+}
+
+.errorMessage {
+  background-color:rgba(255,255,255, 0.6);
+  border:1px solid #fff;
+  border-radius:3px;
+  margin-top: 5vw;
+  padding:4% 2%;
+  font-size: 0.24 * $font-size;
+  color: red;
+}
+
+.footer {
+  position: absolute;
+  bottom:1em;
+  width:calc(100% - 10%);
+  font-size: 0.20 * $font-size;
+  color:#ffffff;
+  text-align: left;
+  &:before{
+    background-image:none;
+  }
+  strong{
+    font-size:0.22 * $font-size;
+  }
+  @media (min-width: 768px){
+    width:calc(100% - 16px);
+    font-size:11px;
+    strong{
+      font-size:12px;
+    }
+  }
+}

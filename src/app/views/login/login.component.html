@@ -1,0 +1,33 @@
+
+<ion-content padding class="getBackgroundImage" [hidden]="loginService.hideLogin">
+  <div class="login-wrap">
+
+      <h1 class="positionTitle brandWhite">
+          <ion-text class="brandTitle">
+              <span class="">Pera</span>
+              <span class="brandYellow">Mobile</span>
+              <!--HTML code for the TM symbol-->
+              <span class="trademark">&#8482;</span>
+          </ion-text>
+          <span class="positionSubtitle">Proactive Rapid Response</span>
+      </h1>
+
+      <form (ngSubmit)="login()">
+          <ion-item class="transparentBackground">
+              <ion-label for="username">Username</ion-label>
+              <ion-input #input required type="text" [(ngModel)]="getUser().username" text-left id="username" name="username" placeholder="Username"></ion-input>
+          </ion-item>
+          <ion-item class="transparentBackground">
+              <ion-label for="password">Password</ion-label>
+              <ion-input required type="password" [(ngModel)]="userPassword" text-left id="password" name="password" placeholder="Password"></ion-input>
+          </ion-item>
+          <button id="login" type="submit"><strong>Sign In</strong></button>
+      </form>
+      <div class="errorMessage" *ngIf="errorMessage">{{errorMessage}}</div>
+
+      <ion-footer class="footer"><strong>PeraMobile v4.1.0</strong><br/>Proprietary and Confidential, © 2018 PeraHealth, Inc. All Rights Reserved
+      US Patent Nos. 8,092,380; 8,100,829; 8,355,925; 8,403,847 and 8,454,506; Canadian Patent No. 2,599,387</ion-footer>
+
+  </div>
+</ion-content>
+

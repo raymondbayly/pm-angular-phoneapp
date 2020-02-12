@@ -1,0 +1,18 @@
+.toolbar-top{
+  display:flex;
+  justify-content:space-between;
+  align-content:center;
+  max-height:60px;
+}
+
+.header-navbar{
+  display:flex;
+  justify-content:space-between;
+ ion-button{
+    font-size:19px;
+    --color:#A9B3BB;
+    --color-focused:#ffffff;
+    --color-activated:#ffffff;
+  }
+
+}

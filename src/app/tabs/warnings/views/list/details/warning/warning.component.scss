@@ -1,0 +1,57 @@
+.riScoreOuter {
+  text-align: center;
+}
+
+.riScore {
+  padding: 10px;
+  border-radius: 50%;
+  max-width: 50px;
+  width: 50px;
+  white-space: nowrap;
+  display: inline-block;
+  text-align: center;
+  font-size: large;
+  color: white;
+}
+
+.vh-warning {
+  @extend .riScore;
+  background-color: #DC1B06;
+}
+
+.h-warning {
+  @extend .riScore;
+  background-color: #FE7D2F;
+}
+
+.m-warning {
+  @extend .riScore;
+  background-color: #FECC2F;
+}
+
+.no-warning {
+  @extend .riScore;
+  background-color: #888888;
+}
+
+.activeWarningCategory {
+  text-align: center;
+  font-size: small;
+  font-weight: bold;
+  color: black;
+  padding-bottom: 5px;
+}
+
+.dateCreated {
+  font-size: small;
+  text-align: center;
+  padding-top: 5px;
+  color: gray;
+}
+
+.activeWarningDate {
+  text-align: center;
+  font-size: small;
+  color: black;
+  font-weight: bold;
+}

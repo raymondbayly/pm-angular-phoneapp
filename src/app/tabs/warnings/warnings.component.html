@@ -1,0 +1,35 @@
+<ion-header class="peraHealthBackground">
+  <ion-toolbar class="peraHealthBackground">
+      <div class="toolbar-top">
+          <h1><ion-title class="peraHealthTabPageTitle">{{title}}<span class="count">
+              <ion-badge class="count-badge">{{peraCount}}</ion-badge></span></ion-title></h1>
+          <ul class="header-navbar">
+          <ion-buttons end>
+              <li>
+                  <ion-button id="search"  (click)="this.switchSearch()">
+                      <ion-icon name="search">Search patient list</ion-icon>
+                  </ion-button>
+              </li>
+              <li>
+                  <ion-button id="filter"  (click)="this.switchFilter()">
+                      <ion-icon name="options">Filter the list below</ion-icon>
+                  </ion-button>
+              </li>
+              <li>
+                  <ion-button id="user-settings"  (click)="this.switchProfile()">
+                      <ion-icon name="contact">Adjust User Settings</ion-icon>
+                  </ion-button>
+              </li>
+          </ion-buttons>
+          </ul>
+      </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <span id="errorMessage" *ngIf="errorMessage"><h2>Could not get The Warning!</h2><p>{{errorMessage}}</p></span>
+  <app-warning-profile-settings *ngIf="profileFlag"></app-warning-profile-settings>
+  <app-warnings-filter *ngIf="filterFlag"></app-warnings-filter>
+  <app-warnings-search *ngIf="searchFlag"></app-warnings-search>
+  <app-visit-warning-list *ngIf="listFlag"></app-visit-warning-list>
+</ion-content>

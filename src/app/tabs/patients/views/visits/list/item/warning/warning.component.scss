@@ -1,0 +1,81 @@
+.warning-container{
+  max-width: 200px;
+  min-width: 100px;
+  width: 150px;
+  min-height: 104px;
+  max-height: 104px;
+  height: 104px;
+  border-left-width: 10px;
+  border-left-style: solid;
+  text-align: center;
+  font-family: 'Helvetica Neue';
+  font-weight: regular;
+  text-align: center;
+  padding-bottom: 1px;
+}
+
+.warning-text {
+  font-size: 18px;
+}
+
+.ri-score-text{
+  font-size: 24px;
+  min-height: 40px;
+  height: 50%;
+  vertical-align: middle;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+}
+
+.created-text{
+  font-size: 12px;
+  text-align: center;
+  color:#dbdbd6;
+}
+
+.date-time-text {
+  font-size:12px;
+}
+
+.vh-warning {
+  @extend .warning-container;
+  border-left-color: #DC1B06;
+}
+
+.h-warning {
+  @extend .warning-container;
+  border-left-color: #FE7D2F;
+}
+
+.m-warning {
+  @extend .warning-container;
+  border-left-color: #FECC2F;
+}
+
+.no-warning {
+  @extend .warning-container;
+  border-left-color: #888888;
+}
+
+.activeWarningCategory {
+  text-align: center;
+  font-size: small;
+  font-weight: bold;
+  color: black;
+  padding-bottom: 5px;
+}
+
+.dateCreated {
+  font-size: small;
+  text-align: center;
+  padding-top: 5px;
+  color: gray;
+}
+
+.activeWarningDate {
+  text-align: center;
+  font-size: small;
+  color: black;
+  font-weight: bold;
+}

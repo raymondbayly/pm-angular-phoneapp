@@ -1,0 +1,16 @@
+
+.tabButton {
+    --color: #d6d6db;
+    --ion-color-primary: #ffffff;
+      background-color: #274054;
+      font-size: 26px;
+    &.tab-selected {
+      background-color: #446d89;
+      color: #ffffff;
+    }
+  }
+
+  .tabBar {
+    background-color: #274054;
+  }
+  

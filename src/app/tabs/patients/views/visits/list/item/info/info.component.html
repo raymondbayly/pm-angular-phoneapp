@@ -1,0 +1,15 @@
+<div class="patientName" style="text-transform: capitalize;font-weight: regular">
+    {{graph?.displayName.toLowerCase()}} <ion-icon name="eye" class="patient-icon" *ngIf="checkUserAgainstWatchList()"></ion-icon>
+</div>
+<div class="dob">{{patientService.getPatientAge(graph)}}</div>
+<div class="loc">
+    {{graph?.unitId}} {{graph?.room}} {{graph?.bed}}
+</div>
+<div class="mrn">
+</div>
+
+<div *ngIf="primDiag"  class="diag">
+    <span style="color: darkgray;">Diagnosis: </span> {{ this.primDiag }}
+</div>
+
+

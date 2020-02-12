@@ -1,0 +1,19 @@
+<ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content
+      pullingText="Pull to refresh"
+      refreshingText="loading...">
+    </ion-refresher-content>
+  </ion-refresher>
+  
+<!--
+  TODO: The virtual scrolling isn't working so it needs to be fixed
+  <ion-virtual-scroll [items]="mockWarningList" >
+    <div *virtualItem="let patient" class="visitInfoDisplay">
+        <app-warnings-item [patient]="patient"></app-warnings-item>
+    </div>
+</ion-virtual-scroll>
+-->
+
+<div *ngFor="let patient of mockWarningList" class="visitInfoDisplay">
+    <app-warnings-item [patient]="patient"></app-warnings-item>
+</div>

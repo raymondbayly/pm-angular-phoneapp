@@ -1,0 +1,49 @@
+.toolbar-top{
+  display:flex;
+  justify-content:space-between;
+  align-content:center;
+  max-height:60px;
+}
+
+.header-navbar{
+  display:flex;
+  justify-content:space-between;
+ ion-button{
+    font-size:19px;
+    --color:#A9B3BB;
+    --color-focused:#ffffff;
+    --color-activated:#ffffff;
+  }
+
+}
+
+.app-visit-warning-list {
+  margin: 8px 0 0 8px;
+  padding: 0;
+  height: 125px;
+  width: 100%;
+}
+
+.count {
+  font-size: 26px;
+  padding-left: 20px;
+}
+
+.button-class {
+  vertical-align: middle;
+}
+
+.count-badge {
+  background-color: #446d89;
+  font-family: 'Helvetica Neue';
+  font-weight: regular;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 15px;
+}
+
+.bottom-toolbar {
+  height: 30px;
+  width: 100%;
+  background-color: #ffffff;
+}

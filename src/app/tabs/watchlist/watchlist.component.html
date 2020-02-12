@@ -1,0 +1,33 @@
+<ion-header class="peraHealthBackground">
+  <ion-toolbar class="peraHealthBackground">
+      <div class="toolbar-top">
+          <h1><ion-title class="peraHealthTabPageTitle">{{title}}</ion-title></h1>
+          <ul class="header-navbar">
+                <ion-buttons end>
+                        <li>
+                            <ion-button id="search"  (click)="this.switchSearch()">
+                                <ion-icon name="search">Search patient list</ion-icon>
+                            </ion-button>
+                        </li>
+                        <li>
+                            <ion-button id="filter"  (click)="this.switchFilter()">
+                                <ion-icon name="options">Filter the list below</ion-icon>
+                            </ion-button>
+                        </li>
+                        <li>
+                            <ion-button id="user-settings"  (click)="this.switchProfile()">
+                                <ion-icon name="contact">Adjust User Settings</ion-icon>
+                            </ion-button>
+                        </li>
+                    </ion-buttons>
+          </ul>
+      </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+        <app-watchlist-profile-settings *ngIf="profileFlag"></app-watchlist-profile-settings>
+        <app-watchlist-filter *ngIf="filterFlag"></app-watchlist-filter>
+        <app-watchlist-search *ngIf="searchFlag"></app-watchlist-search>
+    <app-watchlist-display-list *ngIf="listFlag"></app-watchlist-display-list>
+</ion-content>

@@ -1,0 +1,11 @@
+<div class="patientName" style="text-transform: capitalize;font-weight: regular">
+    {{patient?.patientFirstName.toLowerCase()}} {{patient?.patientLastName.toLowerCase()}} <ion-icon name="eye" class="patient-icon" *ngIf="checkUserAgainstWatchList()"></ion-icon>
+</div>
+<div class="dob">{{patientService.getPatientAge(patient)}}</div>
+<div class="loc">
+    {{patient?.facility}} {{patient?.unit}} {{patient?.bed}}
+</div>
+<div class="mrn">
+</div>
+
+
